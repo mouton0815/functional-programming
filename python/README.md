@@ -1,3 +1,3 @@
 ```shell
-python3 closure.py
+python3 src/closure.py
 ```
