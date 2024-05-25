@@ -5,10 +5,10 @@ edition = "2021"
 
 [[bin]]
 name = "borrowing"
-path = "borrowing.rs"
+path = "src/borrowing.rs"
 
 [[bin]]
 name = "currying"
-path = "currying.rs"
+path = "src/currying.rs"
 
 [dependencies]
