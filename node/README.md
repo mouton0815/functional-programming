@@ -1,4 +1,4 @@
 ```shell
-node closure.js
-node currying.js
+node src/closure.js
+node src/currying.js
 ```
