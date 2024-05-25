@@ -1,3 +1,5 @@
+package src
+
 fun log(level: String, message: String) {
     println("[$level]: $message")
 }
