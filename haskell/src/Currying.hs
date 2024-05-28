@@ -6,5 +6,4 @@ mylog level message = print $ "[" ++ level ++ "] " ++ message
 logDebug :: String -> IO ()
 logDebug message = mylog "DEBUG" message
 
-main = do
-  logDebug "Hello, World!" -- "[DEBUG] Hello, World!"
+main = logDebug "Hello, World!" -- "[DEBUG] Hello, World!"
