@@ -1,9 +1,8 @@
 module Main (main) where
 
 -- Creating a stateful counter is hard in Haskell, because all expressions are constant.
--- An escape is using Monads, in particular IO and IORef.
--- Note that this is not a nice style in Haskell.
--- State-varying operations should be avoided.
+-- An escape is using Monads, in particular IO.Unsafe and IORef, to hold the state.
+-- Note that this is not nice Haskell style; state-varying operations should be avoided.
 
 import Data.IORef
 import System.IO.Unsafe (unsafePerformIO)
