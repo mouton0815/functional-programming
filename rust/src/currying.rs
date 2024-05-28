@@ -3,7 +3,7 @@ fn log(level: &str, message: &str) {
 }
 
 fn log_for_level(level: &str) -> impl Fn(&str) -> () + '_ {
-    return move |message| log(level, message);
+    move |message| log(level, message)
 }
 
 fn main() {
