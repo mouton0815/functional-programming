@@ -7,3 +7,6 @@ in non-functional languages, namely
 * [Kotlin](./kotlin)
 * [Python](./python)
 * [Rust](./rust)
+
+For reference, there are also implementations with
+* [Haskell](./haskell)

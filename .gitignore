@@ -3,3 +3,6 @@
 rust/target/
 out/
 cpp/a.out
+haskell/a.out
+haskell/src/*.hi
+haskell/src/*.o
