@@ -1,9 +1,9 @@
 module Main (main) where
 
-mylog :: String -> String -> IO ()
-mylog level message = print $ "[" ++ level ++ "] " ++ message
+logger :: String -> String -> IO ()
+logger level message = print $ "[" ++ level ++ "] " ++ message
 
 logDebug :: String -> IO ()
-logDebug message = mylog "DEBUG" message
+logDebug message = logger "DEBUG" message
 
 main = logDebug "Hello, World!" -- "[DEBUG] Hello, World!"
