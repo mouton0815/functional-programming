@@ -1,13 +1,10 @@
 module Main (main) where
 
--- TODO: Print result rather than returning String
-mylog :: String -> String -> String
-mylog level message = "[" ++ level ++ "] " ++ message
+mylog :: String -> String -> IO ()
+mylog level message = print $ "[" ++ level ++ "] " ++ message
 
-logDebug :: String -> String
+logDebug :: String -> IO ()
 logDebug message = mylog "DEBUG" message
 
 main = do
-  putStr "Hello, Haskell!\n"
-  print (mylog "DEBUG" "Hello")
-  print (logDebug "Hallo")
+  logDebug "Hello, World!" -- "[DEBUG] Hello, World!"
