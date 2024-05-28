@@ -8,6 +8,10 @@ name = "borrowing"
 path = "src/borrowing.rs"
 
 [[bin]]
+name = "closure"
+path = "src/closure.rs"
+
+[[bin]]
 name = "currying"
 path = "src/currying.rs"
 
