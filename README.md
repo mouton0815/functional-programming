@@ -3,7 +3,7 @@ This repository demonstrates the implementation of constructs known from functio
 in non-functional languages, namely
 * **C++** ([borrowing](./cpp/src/unique_ptr.cpp))
 * **Java** ([1st class function](./java/src/Function.java), [lambda](./java/src/Lambda.java), [closure](./java/src/Closure.java)) 
-* **JavaScript** ([closure](./node/src/closure.js), [currying](./node/src/currying.js))
+* **JavaScript** ([lambda](./node/src/lambda.js), [closure](./node/src/closure.js), [currying](./node/src/currying.js))
 * **Kotlin** ([lambda](./kotlin/src/Lambda.kt), [currying](./kotlin/src/Currying.kt))
 * **Python** ([closure](./python/src/closure.py))
 * **Rust** ([borrowing](./rust/src/borrowing.rs), [closure](./rust/src/closure.rs), [currying](./rust/src/currying.rs))
