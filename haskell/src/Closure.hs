@@ -1,24 +1,21 @@
 module Main (main) where
 
 -- Creating a stateful counter is hard in Haskell, because all expressions are constant.
--- An escape is using Monads, in particular IO.Unsafe and IORef, to hold the state.
+-- An escape is using Monads, in particular IO and IORef, to hold the state.
 -- Note that this is not nice Haskell style; state-varying operations should be avoided.
+-- Kudos to https://stackoverflow.com/a/6349651
 
 import Data.IORef
-import System.IO.Unsafe (unsafePerformIO)
 
-counter :: IORef Int
-counter = unsafePerformIO (newIORef 0)
+type Counter = Int -> IO Int
 
-incrementCounter :: IO Int
-incrementCounter = do
-    cnt <- readIORef counter
-    let newCnt = cnt + 1
-    writeIORef counter newCnt
-    return newCnt
-
+makeCounter :: IO Counter
+makeCounter = do
+    r <- newIORef 0
+    return (\i -> do { modifyIORef r (+i); readIORef r })
 
 main = do
-    incrementCounter >>= (\x -> print x) -- 1
-    incrementCounter >>= (\x -> print x) -- 2
-    incrementCounter >>= (\x -> print x) -- 3
+    incrBy <- makeCounter
+    incrBy 1 >>= (\x -> print x) -- 1
+    incrBy 1 >>= (\x -> print x) -- 2
+    incrBy 1 >>= (\x -> print x) -- 3
