@@ -4,7 +4,7 @@ in non-functional languages, namely
 * **C++** ([borrowing](./cpp/src/unique_ptr.cpp))
 * **Java** ([1st class function](./java/src/Function.java), [lambda](./java/src/Lambda.java), [closure](./java/src/Closure.java)) 
 * **JavaScript** ([lambda](./node/src/lambda.js), [closure](./node/src/closure.js), [currying](./node/src/currying.js))
-* **Kotlin** ([lambda](./kotlin/src/Lambda.kt), [currying](./kotlin/src/Currying.kt))
+* **Kotlin** ([lambda](./kotlin/src/Lambda.kt), [closure](./kotlin/src/Closure.kt), [currying](./kotlin/src/Currying.kt))
 * **Python** ([closure](./python/src/closure.py))
 * **Rust** ([borrowing](./rust/src/borrowing.rs), [closure](./rust/src/closure.rs), [currying](./rust/src/currying.rs))
 
