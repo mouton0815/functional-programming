@@ -1,11 +1,11 @@
-public class Algebraic {
+class Algebraic {
 
     sealed interface Maybe {
         record Nothing() implements Maybe {}
         record Just<T>(T value) implements Maybe {}
     }
 
-    private static Maybe getValue() {
+    static Maybe getValue() {
         return new Maybe.Just<>(5);
     }
 
