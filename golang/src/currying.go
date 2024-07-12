@@ -1,9 +1,9 @@
 package main
 
-import logger "log"
+import "fmt"
 
 func log(level string, message string) {
-	logger.Printf("[%s]: %s", level, message)
+	fmt.Printf("[%s]: %s\n", level, message)
 }
 
 func logForLevel(level string) func(string) {
