@@ -1,5 +1,7 @@
 # Functional Programming with Non-Functional Languages
-This repository demonstrates the implementation of constructs known from functional languages
+This repository contains all the code samples of my Medium article
+[Functional Programming with Non-Functional Languages](https://medium.com/p/4e895c2dfe04).
+It demonstrates the implementation of constructs known from functional languages
 in non-functional languages, namely
 * **C++** ([borrowing](./cpp/src/unique_ptr.cpp), [lambda](./cpp/src/lambda.cpp))
 * **Go** ([closure](./golang/src/closure.go), [currying](./golang/src/currying.go))
